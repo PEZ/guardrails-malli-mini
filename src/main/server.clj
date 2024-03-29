@@ -1,5 +1,6 @@
 (ns main.server
-  (:require [main.guarded :as guarded])
+  (:require #_[main.guarded :as guarded]
+            [main.guarded2 :as guarded])
   (:gen-class))
 
 (defn -main

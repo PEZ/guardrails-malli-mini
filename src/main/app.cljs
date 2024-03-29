@@ -1,5 +1,6 @@
 (ns main.app
-  (:require [main.guarded :as guarded]))
+  (:require #_[main.guarded :as guarded]
+            [main.guarded2 :as guarded]))
 
 (defn ^:dev/after-load start! []
   (js/console.log "start")

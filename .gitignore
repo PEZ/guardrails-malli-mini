@@ -1,6 +1,5 @@
 **/public/js/
 **/target/
-package-lock.json
 **/node_modules
 **/.cache
 **/.portal
