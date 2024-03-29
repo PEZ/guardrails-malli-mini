@@ -29,9 +29,10 @@
 (comment
   (hello-friend {:nom "World" :mood 42})
 
-  ;; To use the Guardrails' registry with malli, one way is to specify it as a `:registry` option
-  ;; NB: This only works if Guardrails is enabled. Which may render the whole approach unfeasible.
-  ;; TODO: Figure this out :)
+  ;; To use the Guardrails' registry with Malli, one way is to specify it as a `:registry` option
+  ;; NB: This currently only works if Guardrails is enabled.
+  ;;     You may want to manage any schemas that you want to be able to
+  ;;     validate using Malli directly in production builds eparately.
   (require '[malli.core :as m])
   ;; The require doesn't allow me to use the alias in ClojureScript for some reason...
   (malli.core/validate [:merge :hello/contact [:map [:mood :int]]]
@@ -48,8 +49,8 @@
   (malli.error/humanize explanation) ;; => {:mood ["missing required key"]}
 
   (-> (malli.core/explain [:merge :hello/contact [:map [:mood :int]]]
-                 {:nom "World" :mood :42}
-                 {:registry gr.reg/registry})
+                          {:nom "World" :mood :42}
+                          {:registry gr.reg/registry})
       (malli.error/humanize)) ;; => {:mood ["should be an integer"]}
 
   :rcf)
