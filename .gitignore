@@ -8,4 +8,4 @@ package-lock.json
 .lein*
 .nrepl-port
 **/.cpcache
-repl-client-debug
+repl-client-debug.calva/repl.calva-repl
