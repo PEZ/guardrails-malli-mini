@@ -33,24 +33,23 @@
   ;; NB: This only works if Guardrails is enabled. Which may render the whole approach unfeasible.
   ;; TODO: Figure this out :)
   (require '[malli.core :as m])
-  (m/validate [:merge :hello/contact [:map [:mood :int]]]
-              {:nom "World" :mood 42}
-              {:registry gr.reg/registry}) ;; => true
-
+  ;; The require doesn't allow me to use the alias in ClojureScript for some reason...
+  (malli.core/validate [:merge :hello/contact [:map [:mood :int]]]
+                       {:nom "World" :mood 42}
+                       {:registry gr.reg/registry}) ;; => true
 
   (do
-    (def explanation (m/explain [:merge :hello/contact [:map [:mood :int]]]
-                                {:nom "World"}
-                                {:registry gr.reg/registry}))
+    (def explanation (malli.core/explain [:merge :hello/contact [:map [:mood :int]]]
+                                         {:nom "World"}
+                                         {:registry gr.reg/registry}))
     explanation)
 
   (require '[malli.error :as me])
-  (me/humanize explanation) ;; => {:mood ["missing required key"]}
+  (malli.error/humanize explanation) ;; => {:mood ["missing required key"]}
 
-
-  (-> (m/explain [:merge :hello/contact [:map [:mood :int]]]
+  (-> (malli.core/explain [:merge :hello/contact [:map [:mood :int]]]
                  {:nom "World" :mood :42}
                  {:registry gr.reg/registry})
-      (me/humanize)) ;; => {:mood ["should be an integer"]}
+      (malli.error/humanize)) ;; => {:mood ["should be an integer"]}
 
   :rcf)
