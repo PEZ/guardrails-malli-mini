@@ -1,6 +1,6 @@
 (ns main.guarded2
   (:require [com.fulcrologic.guardrails.malli.core :refer [>defn =>]]
-            [main.registry :as registry]
+            #_[main.registry :as registry]
             #?(:cljs [main.registry :refer-macros [>def]]
                :clj [main.registry :refer [>def]])))
 
