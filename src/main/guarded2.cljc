@@ -1,8 +1,6 @@
 (ns main.guarded2
   (:require [com.fulcrologic.guardrails.malli.core :refer [>defn =>]]
-            #_[main.registry :as registry]
-            #?(:cljs [main.registry :refer-macros [>def]]
-               :clj [main.registry :refer [>def]])))
+            [main.registry :as registry]))
 
 ;; Guardrails with Malli support
 ;; https://github.com/fulcrologic/guardrails#malli-support
@@ -13,8 +11,7 @@
 
 
 ;; Register a schema in the Guardrails registry
-#_(registry/register! :hello/contact [:map [:nom :string]])
-(>def :hello/contact [:map [:nom :string]])
+(registry/register! :hello/contact [:map [:nom :string]])
 
 ;; Use the schema to guard a function
 (>defn hello [{:keys [nom]}]

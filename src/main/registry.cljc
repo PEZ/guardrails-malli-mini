@@ -24,8 +24,3 @@
 (defn register! [type ?schema]
   (swap! !registry assoc type ?schema)
   (gr.reg/merge-schemas! @!registry))
-
-;; We can now use the `>def` convenience macros to register schemas
-;; for both regular Malli validations and Guardrails.
-#?(:clj (defmacro >def [type schema]
-          `(register! ~type ~schema)))
