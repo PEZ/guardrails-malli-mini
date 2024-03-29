@@ -6,7 +6,7 @@
 This super mini [Clojure](https://clojure.org) + [ClojureScript](https://clojurescript.org) project demonstrates:
 * How to use the declarative versions of `malli.util` transformation schemas with Guardrails
 * How to use the Guardrails registry with regular Malli validation
-  * NB: I do not get this to work in Clojure yet, only ClojureScript. I'm probably holding Guardrails and/or Malli wrong. (I'm a noob with both.)
+  * NB: **This only seems to work if Guardrails is enabled.** I'm probably holding Guardrails and/or Malli wrong. (I'm a noob with both.)
 
 The relevant code is in [src/main/guarded.cljc](src/main/guarded.cljc). Try the code in both the Clojure and the ClojureScript REPL.
 

@@ -474,3 +474,209 @@ cljs꞉main.guarded꞉> 
 cljs꞉main.guarded꞉> 
 {:mood ["should be an integer"]}
 cljs꞉main.guarded꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉main.server꞉> 
+nil
+clj꞉main.server꞉> 
+"Hello World! Feeling  perfect today, huh?"
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+true
+clj꞉main.guarded꞉> 
+{:schema [:merge :hello/contact [:map [:mood :int]]],
+ :value {:nom "World"},
+ :errors
+ ({:path [:mood], :in [:mood], :schema [:map [:nom :string] [:mood :int]], :value nil, :type :malli.core/missing-key})}
+clj꞉main.guarded꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+"Hello World! Feeling  perfect today, huh?"
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+; Execution error (ExceptionInfo) at malli.core/-exception (core.cljc:136).
+; :malli.core/invalid-schema
+clj꞉main.guarded꞉> 
+nil
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+clj꞉user꞉> 
+nil
+cljs꞉main.guarded꞉> 
+"Hello World! Feeling  perfect today, huh?"
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+cljs꞉user꞉> 
+nil
+cljs꞉main.guarded꞉> 
+"Hello World! Feeling  perfect today, huh?"
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.app꞉> 
+nil
+cljs꞉main.app꞉> 
+true
+cljs꞉main.app꞉> 
+nil
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+cljs꞉user꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+"Hello World! Feeling  perfect today, huh?"
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+nil
+cljs꞉main.guarded꞉> 
+:repl/exception!
+cljs꞉main.guarded꞉> 
+nil
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+clj꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+"Hello World! Feeling  perfect today, huh?"
+clj꞉main.guarded꞉> 
+:repl/exception!
+clj꞉main.guarded꞉> 
+{:every #object [malli.core.t_malli$core57528],
+ :merge #object [malli.util.t_malli$util59059],
+ :union #object [malli.util.t_malli$util59059],
+ :select-keys #object [malli.util.t_malli$util59059]}
+clj꞉main.guarded꞉> 
+:repl/exception!
+clj꞉main.guarded꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+cljs꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+; Execution error (ExceptionInfo) at malli.core/-exception (core.cljc:136).
+; :malli.core/invalid-schema
+clj꞉main.guarded꞉> 
+nil
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+clj꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+cljs꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+; Execution error (ExceptionInfo) at malli.core/-exception (core.cljc:136).
+; :malli.core/invalid-schema
+clj꞉main.guarded꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+true
+clj꞉main.guarded꞉> 
+nil
+clj꞉shadow.user꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+true
+clj꞉main.guarded꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+cljs꞉user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+nil
+cljs꞉user꞉> 
+nil
+clj꞉main.guarded꞉> 
+nil
+clj꞉main.guarded꞉> 
+true
+clj꞉main.guarded꞉> 

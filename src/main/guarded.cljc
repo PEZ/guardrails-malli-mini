@@ -30,7 +30,8 @@
   (hello-friend {:nom "World" :mood 42})
 
   ;; To use the Guardrails' registry with malli, one way is to specify it as a `:registry` option
-  ;; TODO: This only works in ClojureScript, not in Clojure. I have no clue why.
+  ;; NB: This only works if Guardrails is enabled. Which may render the whole approach unfeasible.
+  ;; TODO: Figure this out :)
   (require '[malli.core :as m])
   (m/validate [:merge :hello/contact [:map [:mood :int]]]
               {:nom "World" :mood 42}
